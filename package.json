@@ -27,5 +27,13 @@
   "devDependencies": {
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robregan/storytime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robregan/storytime/issues"
+  },
+  "homepage": "https://github.com/robregan/storytime#readme"
 }
