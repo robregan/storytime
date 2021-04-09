@@ -10,7 +10,7 @@ const passport = require('passport')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db')
-
+require('dotenv').config()
 // Load config
 dotenv.config({ path: './config/config.env' })
 
