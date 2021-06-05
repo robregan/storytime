@@ -1,13 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
-const app = express()
-app.get('*',function(req,res,next){
-  if(req.headers['x-forwarded-proto']!='https')
-    res.redirect("https://" + req.hostname + req.url)
-  else
-    next() /* Continue to other routes if we're not redirecting */
-})
+
 
 const Story = require('../models/Story')
 

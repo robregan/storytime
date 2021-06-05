@@ -1,13 +1,7 @@
 const express = require('express')
 const passport = require('passport')
 const router = express.Router()
-const app = express()
-app.get('*',function(req,res,next){
-    if(req.headers['x-forwarded-proto']!='https')
-      res.redirect("https://" + req.hostname + req.url)
-    else
-      next() /* Continue to other routes if we're not redirecting */
-  })
+
 
 
 // auth with google
